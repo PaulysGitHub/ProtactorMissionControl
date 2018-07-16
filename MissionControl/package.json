@@ -1,0 +1,20 @@
+{
+  "name": "MissionControl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "protractor-video-reporter": "^0.3.0"
+  }
+}
