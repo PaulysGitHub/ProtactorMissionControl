@@ -19,7 +19,7 @@ describe("Login Page Tests", function() {
 
     it("should return error if not login with a user name", function() {
         loginPage.enterLoginKeys.sendKeys(" ");
-        loginPage.enterPasswordKeys.sendKeys("thisisnom1983");
+        loginPage.enterPasswordKeys.sendKeys("this");
         loginPage.clickLoginBtn.click();
         browser.sleep(2000);
     });
@@ -43,7 +43,7 @@ describe("Login Page Tests", function() {
 
     it("should return error if not using a valid user name", function() {
         loginPage.enterLoginKeys.sendKeys("paul.laguna@thisisnom.com");
-        loginPage.enterPasswordKeys.sendKeys("thisisnom1983");
+        loginPage.enterPasswordKeys.sendKeys("this");
         loginPage.clickLoginBtn.click();
         expect(loginPage.wrongEmailAlert.isDisplayed()).toBe(true);
         expect(loginPage.wrongEmailAlertMsg1.getText()).toEqual("User Does Not Exist");
@@ -77,7 +77,7 @@ describe("Login Page Tests", function() {
 
     it("should generate succesful login", function() {
         loginPage.enterLoginKeys.sendKeys("paul.laguna@thisisnom.co");
-        loginPage.enterPasswordKeys.sendKeys("thisisnom1983");
+        loginPage.enterPasswordKeys.sendKeys("thisisnom");
         loginPage.clickLoginBtn.click();
 
         browser.sleep(2000);
